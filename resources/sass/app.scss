@@ -1,1 +1,50 @@
 //
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+body{
+    font-family: 'Roboto', sans-serif;
+}
+
+.container{
+    margin: 0 auto;
+    width: 1600px;
+
+    .card-wrapper{
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        justify-content: center;
+        align-items: center;
+        padding-top: 25px;
+
+        .card{
+            width: calc((100% - 10px) / 2);
+            background-color: lightgrey;
+            height: 250px;
+            border-radius: 8px;
+            box-shadow: 1px 1px 10px rgb(0 0 0 / 30%);
+            
+
+            h4,p{
+                padding-left: 15px;
+                color: white;
+            }
+
+            h4{
+                margin-top: 15px;
+            }
+            
+            p:first-child{
+                text-transform: uppercase;
+            }
+            
+        }
+    }
+}
+
